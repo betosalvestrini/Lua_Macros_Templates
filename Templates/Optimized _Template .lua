@@ -51,7 +51,7 @@ lmc_set_handler('Macropad', function(button,direction)
         --COMMENT--
 
     --NUMPLUS-- 
-     elseif (buttin == 107) then
+     elseif (button == 107) then
         --COMMENT--
 
     --NUMMINUS--
