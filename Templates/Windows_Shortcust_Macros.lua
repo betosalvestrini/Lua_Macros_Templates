@@ -59,7 +59,7 @@ lmc_set_handler('Macropad', function(button,direction)
     --NUMMULTIPLY--
      elseif (button == 106) then
         --Applicattion--
-        os.execute("C:\\") --You Need the path of an excel file here with "\\"--
+        os.execute("C:\\") --You Need the path of an exe file here with "\\"--
 
     --NUMPLUS-- 
     elseif (button == 107) then
@@ -79,7 +79,7 @@ lmc_set_handler('Macropad', function(button,direction)
     --NUMDIVIDE--
     elseif (button == 111) then
         --Applicattion--
-        os.execute("C:\\") --You Need the path of an excel file here with "\\"--
+        os.execute("C:\\") --You Need the path of an exe file here with "\\"--
 
     --ENTER--
     elseif (button == 13) then
