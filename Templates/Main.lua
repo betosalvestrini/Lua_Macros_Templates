@@ -1,7 +1,9 @@
 ------------------- LUA Macros Profile Chooser -------------------------------------------------
 lmc_device_set_name('Macropad','23902A75')
 lmc_print_devices()
-
+lmc.minimizeToTray = true
+lmc_minimize()
+lmc_send_keys('%{F4}')
 lmc_set_handler('Macropad', function(button,direction)
 
   if (direction == 1) then return end
