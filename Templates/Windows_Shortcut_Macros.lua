@@ -1,4 +1,4 @@
-1------------------- Full LUA Macros Windows-------------------------------------------------
+------------------- Full LUA Macros Windows -------------------------------------------------
 lmc_device_set_name('Macropad','23902A75')
 lmc_print_devices()
 
@@ -9,6 +9,7 @@ lmc_set_handler('Macropad', function(button,direction)
     --Number 0--
     if (button == 96) then
         --Load Macro Main File--
+        lmc_say('Selector de perfiles')
         lmc_load('D:\\Main.lua')
 
     --Number 1--
@@ -58,8 +59,8 @@ lmc_set_handler('Macropad', function(button,direction)
         
     --NUMMULTIPLY--
      elseif (button == 106) then
-        --Applicattion--
-        os.execute("C:\\") --You Need the path of an exe file here with "\\"--
+        --Hide All--
+        lmc_send_keys('#d',50)
 
     --NUMPLUS-- 
     elseif (button == 107) then
@@ -68,8 +69,9 @@ lmc_set_handler('Macropad', function(button,direction)
 
     --NUMMINUS--
      elseif (button == 109) then
-         --Close Window--
-        lmc_send_keys('%{F4}',50)
+        --Uipath Macro Profile--
+        lmc_say('Modo yu ay pat')
+        lmc_load('D:\\Uipath.lua')
 
     --NUMDECIMAL--
      elseif (button == 110) then
@@ -78,8 +80,8 @@ lmc_set_handler('Macropad', function(button,direction)
 
     --NUMDIVIDE--
     elseif (button == 111) then
-        --Applicattion--
-        os.execute("C:\\") --You Need the path of an exe file here with "\\"--
+        --Vivaldi--
+        os.execute("C:\\Users\\betos\\AppData\\Local\\Vivaldi\\Application\\vivaldi.exe")
 
     --ENTER--
     elseif (button == 13) then
@@ -88,8 +90,9 @@ lmc_set_handler('Macropad', function(button,direction)
 
     --BACKSPACE--
     elseif (button == 8) then
-        --Delete--
-        lmc_send_keys('#i')
+         --Close--
+        lmc_send_keys('%{F4}',50)
+
 
   end
 end

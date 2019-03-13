@@ -9,6 +9,7 @@ lmc_set_handler('Macropad', function(button,direction)
     --Number 0--
      if (button == 96) then
         --Load Macro Main File--
+        lmc_say('Selector de perfiles')
         lmc_load('D:\\Main.lua')       
         
     --Number 1--
@@ -84,7 +85,7 @@ lmc_set_handler('Macropad', function(button,direction)
     --ENTER--
     elseif (button == 13) then
         --Play/Pause--
-        lmc_send_keys('+{F1}')
+        lmc_send_keys('{F24}')
     
     --BACKSPACE--
     elseif (button == 8) then

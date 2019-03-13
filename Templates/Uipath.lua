@@ -9,17 +9,18 @@ lmc_set_handler('Macropad', function(button,direction)
     --Number 0--
      if (button == 96) then
         --Load Macro Main File--
+        lmc_say('Selector de perfiles')
         lmc_load('D:\\Main.lua')
 
     --Number 1--
      elseif (button == 97) then
-        --Undo--
-        lmc_send_keys('^z',50)
+        --Copy--
+        lmc_send_keys('^c',50)
         
     --Number 2--
      elseif (button == 98) then
-        --Redo--
-        lmc_send_keys('^+z',50)
+        --Paste--
+        lmc_send_keys('^v',50)
         
     --Number 3--
      elseif (button == 99) then
@@ -34,12 +35,12 @@ lmc_set_handler('Macropad', function(button,direction)
     --Number 5--
      elseif (button == 101) then
         --Stop--
-        lmc_spawn('{F12}',50)
+        lmc_send_keys('{F12}',50)
         
     --Number 6--
      elseif (button == 102) then
-      --Copy--
-        lmc_send_keys('^c',50)
+      --Undo--
+        lmc_send_keys('^z',50)
 
     --Number 7--
      elseif (button == 103) then
@@ -64,12 +65,14 @@ lmc_set_handler('Macropad', function(button,direction)
 
     --NUMPLUS-- 
      elseif (button == 107) then
-        --Paste--
-        lmc_send_keys('^v')
+        --New Sequence--
+        lmc_send_keys('^n')
 
     --NUMMINUS--
      elseif (button == 109) then
-        --COMMENT--
+        --Dektop Macro Profile--
+        lmc_say('Modo Escritorio')
+        lmc_load('D:\\Desktop.lua')
 
     --NUMDECIMAL--
      elseif (button == 110) then
