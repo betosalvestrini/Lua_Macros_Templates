@@ -10,7 +10,7 @@ lmc_set_handler('Macropad', function(button,direction)
      if (button == 96) then
         --Load Macro Main File--
         lmc_say('Selector de perfiles')
-        lmc_load('D:\\Main.lua')       
+        lmc_load('D:\\Descargas\\luamacros\\Main.lua')       
         
     --Number 1--
      elseif (button == 97) then

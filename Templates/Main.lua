@@ -1,9 +1,6 @@
 ------------------- LUA Macros Profile Chooser -------------------------------------------------
 lmc_device_set_name('Macropad','23902A75')
 lmc_print_devices()
-lmc.minimizeToTray = true
-lmc_minimize()
-lmc_send_keys('%{F4}')
 lmc_set_handler('Macropad', function(button,direction)
 
   if (direction == 1) then return end
@@ -17,20 +14,20 @@ lmc_set_handler('Macropad', function(button,direction)
      elseif (button == 97) then
         --Load Desktop Macro Profile--
         lmc_say('Modo Escritorio')
-        lmc_load('D:\\Desktop.lua')
+        lmc_load('D:\\Descargas\\luamacros\\Desktop.lua')
 
     --Number 2--
      elseif (button == 98) then
         --Load Uipath Macro Profile--
         lmc_say('Modo yu ay pat')
         os.execute("C:\\Users\\betos\\AppData\\Local\\UiPath\\UiPath.Studio.exe")
-        lmc_load('D:\\Uipath.lua')
+        lmc_load('D:\\Descargas\\luamacros\\Uipath.lua')
 
     --Number 3--
      elseif (button == 99) then
          --Load Davinci Macro Profile--
         lmc_say('Davinci Risolf')
-        lmc_load('D:\\Davinci.Lua')
+        lmc_load('D:\\Descargas\\luamacros\\Davinci.Lua')
 
     --Number 4--
      elseif (button == 100) then
