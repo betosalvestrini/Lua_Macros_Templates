@@ -20,3 +20,15 @@ In case you aren't familiarize with github go directly to this <a href="https://
    ```
    os.execute(".exe Path Here")
    ```  
+#### 4. If you want to run lua macros when windows start you can use the "Launch_on_startup.bat"
+
+To use it you just need to press **Win+R** and write the following code and press ok
+    ```
+    shell:startup
+    ```
+    
+then you just to copy or move the **"Launch_on_startup.bat"** file to the folder that opens when you execute the command
+
+i'm new on github so if you have any recommendantion or want to help write a README with more details 
+
+#### Templates By: Humberto Salvestrini
