@@ -1,7 +1,7 @@
 ------------------- LUA Macros Profile Chooser -------------------------------------------------
-lmc_device_set_name('Macropad','23902A75')
+lmc_device_set_name('Name Of Your Device Here','ID of your Device Here')
 lmc_print_devices()
-lmc_set_handler('Macropad', function(button,direction)
+lmc_set_handler('Name Of Your Device Here', function(button,direction)
 
   if (direction == 1) then return end
     
@@ -13,21 +13,22 @@ lmc_set_handler('Macropad', function(button,direction)
     --Number 1--
      elseif (button == 97) then
         --Load Desktop Macro Profile--
-        lmc_say('Modo Escritorio')
-        lmc_load('D:\\Descargas\\luamacros\\Desktop.lua')
+        --This is a text to speech line if you want to use it just delete the "--" from the line--
+        --lmc_say('Modo Escritorio')--
+        lmc_load('File Path Here')  
 
     --Number 2--
      elseif (button == 98) then
         --Load Uipath Macro Profile--
-        lmc_say('Modo yu ay pat')
-        os.execute("C:\\Users\\betos\\AppData\\Local\\UiPath\\UiPath.Studio.exe")
-        lmc_load('D:\\Descargas\\luamacros\\Uipath.lua')
+        --lmc_say('Modo yu ay pat')--
+        os.execute(".exe Path Here")
+        lmc_load('File Path Here')
 
     --Number 3--
      elseif (button == 99) then
          --Load Davinci Macro Profile--
-        lmc_say('Davinci Risolf')
-        lmc_load('D:\\Descargas\\luamacros\\Davinci.Lua')
+        --lmc_say('Davinci Risolf')--
+        lmc_load('File Path Here')
 
     --Number 4--
      elseif (button == 100) then

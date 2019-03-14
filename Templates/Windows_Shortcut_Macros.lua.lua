@@ -1,16 +1,16 @@
 ------------------- Full LUA Macros Windows -------------------------------------------------
-lmc_device_set_name('Macropad','23902A75')
+lmc_device_set_name('Name Of Your Device Here','ID of your Device Here')
 lmc_print_devices()
 
-lmc_set_handler('Macropad', function(button,direction)
+lmc_set_handler('Name Of Your Device Here', function(button,direction)
 
   if (direction == 1) then return end
     
     --Number 0--
     if (button == 96) then
         --Load Macro Main File--
-        lmc_say('Selector de perfiles')
-        lmc_load('D:\\Descargas\\luamacros\\Main.lua')
+        --lmc_say('Selector de perfiles')--
+        lmc_load('File Path Here')
 
     --Number 1--
     elseif (button == 97) then
@@ -81,7 +81,7 @@ lmc_set_handler('Macropad', function(button,direction)
     --NUMDIVIDE--
     elseif (button == 111) then
         --Vivaldi--
-        os.execute("C:\\Users\\betos\\AppData\\Local\\Vivaldi\\Application\\vivaldi.exe")
+        os.execute(".exe Path Here")
 
     --ENTER--
     elseif (button == 13) then

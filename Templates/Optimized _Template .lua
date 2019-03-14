@@ -1,8 +1,8 @@
 ------------------- LUA Macros Template. -------------------------------------------------
-lmc_device_set_name('Macropad','23902A75')
+lmc_device_set_name('Name Of Your Device Here','ID of your Device Here')
 lmc_print_devices()
 
-lmc_set_handler('Macropad', function(button,direction)
+lmc_set_handler('Name Of Your Device Here', function(button,direction)
 
   if (direction == 1) then return end
     
